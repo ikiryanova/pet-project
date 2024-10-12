@@ -21,7 +21,7 @@ export const buildPlugins = ({ paths, isDev }: BuildOptions): webpack.WebpackPlu
 
   if (isDev) {
     plugins.push(
-      new webpack.HotModuleReplacementPlugin(),
+      // new webpack.HotModuleReplacementPlugin(), // автоматически добавляется
       new ReactRefreshWebpackPlugin()
     );
   }
