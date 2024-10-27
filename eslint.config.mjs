@@ -19,7 +19,12 @@ const compat = new FlatCompat({
 });
 
 export default [
-  ...compat.extends("eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:react/recommended"),
+  ...compat.extends(
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:i18next/recommended"
+  ),
   {
     plugins: {
       "@typescript-eslint": typescriptEslint,
@@ -52,6 +57,7 @@ export default [
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "react/no-deprecated": "warn",
+      "i18next/no-literal-string": ["error", { markUpOnly: true }],
       "import/order": [
         "error",
         {
