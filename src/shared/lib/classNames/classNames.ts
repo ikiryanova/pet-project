@@ -8,8 +8,5 @@ export function classNames(cls: string, mods: Mods = {}, additional: string[] = 
       .filter(([className, value]) => Boolean(value))
       .map(([className]) => className)
   ]
-    .join(' ');
+    .join(" ");
 }
-
-
-
