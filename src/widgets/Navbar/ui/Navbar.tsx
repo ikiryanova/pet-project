@@ -10,10 +10,10 @@ export const Navbar = () => {
   return (
     <div className={cls.Navbar}>
       <div className={cls.links}>
-        <AppLink to="/" className={cls.mainLink} theme={AppLinkTheme.SECONDATY}>
+        <AppLink to="/" className={cls.mainLink} theme={AppLinkTheme.SECONDARY}>
           {t("Главная")}
         </AppLink>
-        <AppLink to="/about" theme={AppLinkTheme.SECONDATY}>
+        <AppLink to="/about" theme={AppLinkTheme.SECONDARY}>
           {t("О сайте")}
         </AppLink>
       </div>

@@ -57,7 +57,7 @@ export default [
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "react/no-deprecated": "warn",
-      "i18next/no-literal-string": ["error", { markUpOnly: true, ignoreAttribute: ["data-testid"] }],
+      "i18next/no-literal-string": ["error", { markUpOnly: true, ignoreAttribute: ["data-testid", "to"] }],
       "import/order": [
         "error",
         {
