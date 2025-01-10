@@ -11,8 +11,10 @@
     "lint:scss": "npx  stylelint **/*.scss",
     "lint:scss:fix": "npx  stylelint **/*.scss --fix",
     "test:unit": "jest --config ./configs/jest/jest.config.ts",
+    "test:ui": "npx loki test",
+    "test:ui:ok": "npx loki approve",
     "sb": "start-storybook -p 6006 -c ./configs/storybook",
-    "build-sb": "build-storybook -c ./configs/storybook"
+    "sb:build": "build-storybook -c ./configs/storybook"
   },
   "keywords": [],
   "author": "",
@@ -67,6 +69,7 @@
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
+    "loki": "^0.35.1",
     "mini-css-extract-plugin": "^2.5.3",
     "react-refresh": "^0.12.0",
     "regenerator-runtime": "^0.13.9",
@@ -82,5 +85,20 @@
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.app",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }
