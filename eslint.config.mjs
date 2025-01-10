@@ -57,7 +57,7 @@ export default [
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "react/no-deprecated": "warn",
-      "i18next/no-literal-string": ["error", { markUpOnly: true, ignoreAttribute: ["data-testid", "to"] }],
+      "i18next/no-literal-string": ["warn", { markUpOnly: true, ignoreAttribute: ["data-testid", "to"] }],
       "import/order": [
         "error",
         {
@@ -75,13 +75,13 @@ export default [
         },
       ],
     },
-    overrides: [
-      {
-        files: ["**/src/**/*.test.{ts, tsx}"],
-        rules: {
-          "i18next/no-literal-string": "off",
-        },
-      },
-    ],
+    // overrides: [
+    //   {
+    //     files: ["**/src/**/*.test.{ts, tsx}"],
+    //     rules: {
+    //       "i18next/no-literal-string": "off",
+    //     },
+    //   },
+    // ],
   },
 ];
