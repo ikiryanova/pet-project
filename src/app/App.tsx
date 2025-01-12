@@ -1,4 +1,3 @@
-import "./styles/index.scss";
 import { useTheme } from "app/providers/ThemeProviders";
 import { Suspense } from "react";
 import { classNames } from "shared/lib/classNames/classNames";
