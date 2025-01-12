@@ -74,6 +74,7 @@ export default [
           },
         },
       ],
+      "@typescript-eslint/no-require-imports": "warning",
     },
     // overrides: [
     //   {
