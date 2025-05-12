@@ -8,10 +8,10 @@ import { Sidebar } from "widgets/Sidebar";
 import { AppRouter } from "./providers/router";
 
 const App = () => {
-  const { theme } = useTheme();
+  useTheme();
 
   return (
-    <div className={classNames("app", {}, [theme])}>
+    <div className={classNames("app")}>
       <Suspense fallback="">
         <Navbar />
         <div className="content-page">
